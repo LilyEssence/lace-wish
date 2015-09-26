@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Dresses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Color</th>
+      <th>Brand</th>
+      <th>Type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dresses.each do |dress| %>
+      <tr>
+        <td><%= dress.name %></td>
+        <td><%= dress.color %></td>
+        <td><%= dress.brand %></td>
+        <td><%= dress.type %></td>
+        <td><%= link_to 'Show', dress %></td>
+        <td><%= link_to 'Edit', edit_dress_path(dress) %></td>
+        <td><%= link_to 'Destroy', dress, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dress', new_dress_path %>
