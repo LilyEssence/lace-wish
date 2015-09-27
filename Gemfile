@@ -11,8 +11,11 @@ gem 'nokogiri'
 gem 'sdoc',                 '0.4.0', group: :doc
 gem "tzinfo-data"
 gem "paperclip", "~> 4.1.1"
+gem 'rails_12factor', group: :production
+
 group :development, :test do
-  gem 'sqlite3',     '1.3.9'
+  #gem 'sqlite3',     '1.3.9'
+  gem 'pg'
   gem 'byebug',      '3.4.0'
 #s gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
