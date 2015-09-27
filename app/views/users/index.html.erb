@@ -9,7 +9,6 @@
       <th>Email</th>
       <th>Phone Number</th>
       <th>WishlistID</th>
-      <th>Selllist</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -21,7 +20,6 @@
         <td><%= user.email %></td>
         <td><%= user.phonenum %></td>
         <td><%= user.WishlistID %></td>
-        <td><%= user.selllist %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
