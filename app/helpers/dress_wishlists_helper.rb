@@ -1,0 +1,2 @@
+module DressWishlistsHelper
+end

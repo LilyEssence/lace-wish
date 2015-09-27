@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Dress Wishlists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dress</th>
+      <th>Wishlist</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dress_wishlists.each do |dress_wishlist| %>
+      <tr>
+        <td><%= dress_wishlist.dress_id %></td>
+        <td><%= dress_wishlist.wishlist_id %></td>
+        <td><%= link_to 'Show', dress_wishlist %></td>
+        <td><%= link_to 'Edit', edit_dress_wishlist_path(dress_wishlist) %></td>
+        <td><%= link_to 'Destroy', dress_wishlist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dress wishlist', new_dress_wishlist_path %>

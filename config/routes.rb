@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :dress_wishlists
+  resources :wishlists
   get 'static_pages/home'
 
   get 'static_pages/help'
