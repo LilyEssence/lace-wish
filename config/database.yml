@@ -12,7 +12,7 @@ default: &default
 
 development:
   <<: *default
-  adpater: sqlite3
+  adapter: sqlite3
   database: db/development.sqlite3
 
 # Warning: The database defined as "test" will be erased and
