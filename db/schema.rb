@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150927014050) do
+ActiveRecord::Schema.define(version: 20150927051940) do
 
   create_table "dresses", force: :cascade do |t|
     t.string   "name"
@@ -33,10 +33,10 @@ ActiveRecord::Schema.define(version: 20150927014050) do
     t.string   "name"
     t.string   "email"
     t.string   "phonenum"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "WishlistID"
-    t.integer  "selllist"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "wishlist_id"
+    t.integer  "selllist_id"
   end
 
 end
